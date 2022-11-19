@@ -23,7 +23,7 @@ function Header() {
           </div>
         </div>
 
-        <LogoutButton/>
+        <LogoutButton />
       </header>
     )
   }
@@ -37,7 +37,11 @@ function Header() {
           <p className="text-blue-400">Welcome to Meta Messenger</p>
         </div>
 
-        <Link href="/auth/signin" className="px-4 py-2 font-bold text-white bg-blue-400 rounded hover:bg-blue-500">Sign In</Link>
+        <Link
+          href="/auth/signin"
+          className="px-4 py-2 font-bold text-white bg-blue-400 rounded hover:bg-blue-500">
+          Sign In
+        </Link>
       </div>
     </header>
   )

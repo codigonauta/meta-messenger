@@ -1,4 +1,21 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.tabSize": 2,
+  "editor.foldingStrategy": "indentation",
+  "prettier.trailingComma": "none",
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.insertPragma": false,
+  "prettier.bracketSameLine": true,
+  "prettier.jsxSingleQuote": false,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "headwind.runOnSave": true,
+  "html.format.indentInnerHtml": true,
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [80, 120]
 }
