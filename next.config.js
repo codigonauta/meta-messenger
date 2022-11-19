@@ -2,7 +2,12 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['avatars.githubusercontent.com', 'encrypted-tbn3.gstatic.com']
+    domains: [
+      'platform-lookaside.fbsbx.com',
+      'links.papareact.com',
+      'avatars.githubusercontent.com',
+      'encrypted-tbn3.gstatic.com'
+    ]
   },
   experimental: {
     appDir: true

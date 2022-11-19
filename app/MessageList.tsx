@@ -40,13 +40,7 @@ function MessageList({ initialMessages }: Props) {
   return (
     <div className="pt-8 pb-32 space-y-5 ">
       {(messages || initialMessages)?.map((message) => {
-        return (
-          <MessageComponent
-            key={message.id}
-            message={message}
-            isUser={message.username === 'Elon Musk'}
-          />
-        )
+        return <MessageComponent key={message.id} message={message} />
       })}
     </div>
   )

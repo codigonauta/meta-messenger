@@ -1,9 +1,10 @@
+import { unstable_getServerSession } from 'next-auth/next'
 import Image from 'next/image'
 import Link from 'next/link'
 import LogoutButton from './LogoutButton'
 
-function Header() {
-  const session = true
+async function Header() {
+  const session = await unstable_getServerSession()
 
   if (session) {
     return (
@@ -13,13 +14,13 @@ function Header() {
             className="object-contain mx-2 rounded-full"
             height={50}
             width={50}
-            src="https://avatars.githubusercontent.com/u/8084651"
+            src={session.user?.image!}
             alt="Profile Picture"
           />
 
           <div>
             <p className="text-blue-400">Logged in as:</p>
-            <p className="text-lg font-bold">Lucas Fontes</p>
+            <p className="text-lg font-bold">{session.user?.name}</p>
           </div>
         </div>
 
